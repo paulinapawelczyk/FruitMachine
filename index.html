@@ -29,29 +29,30 @@
         </section>
 
         <section class="amount_panel">
-            <p>You have still <span class="wallet">150 </span> PLN to play!</p>
+            <p>You have still <span class="wallet"></span> PLN to play!</p>
         </section>
 
         <section class="games">
-            <div class="game_result">Lorem ipsum</div>
+            <div class="game_result"></div>
             <div>
-                <p>You have play <span class="game_number">10</span> times</p>
+                <p>You have play <span class="game_number"></span> times</p>
             </div>
             <div>
-                <p>You have won <span class="game_win">5</span> times</p>
+                <p>You have won <span class="game_win"></span> times</p>
             </div>
             <div>
-                <p>You have lose <span class="game_loss">5</span> times</p>
+                <p>You have lose <span class="game_loss"></span> times</p>
             </div>
         </section>
     </div>
+
     <script src="wallet.js"></script>
     <script src="gameResult.js"></script>
     <script src="play.js"></script>
     <script src="appResult.js"></script>
     <script src="game.js"></script>
     <script>
-        const game = new Game();
+        const game = new Game(100); //create instance
     </script>
 </body>
 
