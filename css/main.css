@@ -106,4 +106,8 @@
     .play button {
         font-size: 1rem;
     }
+
+    .play input {
+        font-size: 1rem;
+    }
 }
