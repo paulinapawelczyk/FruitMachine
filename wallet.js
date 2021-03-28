@@ -21,10 +21,11 @@ class Wallet {
                 else if (type == "substract") {
                     return _money - value;
                 } else {
-                    throw new Error("Wrong type of values");
+                    throw new Error("Wrong type of action");
                 }
             } else {
                 console.log(typeof value);
+                throw new Error("Invalid value of input")
             }
         }
     }
