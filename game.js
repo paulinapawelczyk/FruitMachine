@@ -14,10 +14,12 @@ class Game {
         this.gameWins = document.querySelector('.game .game_win');
         this.gameLoses = document.querySelector('.game .game_loss');
 
+        this.init();
 
     }
 
     init() {
+        console.log("plaay");
 
     }
 
@@ -25,6 +27,3 @@ class Game {
 
     }
 }
-
-
-const game = new Game();
