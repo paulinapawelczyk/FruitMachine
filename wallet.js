@@ -15,11 +15,11 @@ class Wallet {
 
         this.updateWallet = (value, typeOfAction = "add") => {
             if (typeof value === "number" && !isNaN(value)) {
-                if (type == "add") {
-                    return _money + value;
+                if (typeOfAction == "add") {
+                    return _money += value;
                 }
-                else if (type == "substract") {
-                    return _money - value;
+                else if (typeOfAction == "substract") {
+                    return _money -= value;
                 } else {
                     throw new Error("Wrong type of action");
                 }
