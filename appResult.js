@@ -17,5 +17,3 @@ class AppResult {
     }
 }
 
-AppResult.moneyWin(true, 5);
-

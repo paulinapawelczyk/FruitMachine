@@ -24,5 +24,3 @@ class GameResult {
     }
 
 }
-
-const stats = new GameResult();
