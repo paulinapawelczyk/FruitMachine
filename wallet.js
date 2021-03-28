@@ -31,4 +31,3 @@ class Wallet {
     }
 }
 
-const wallet = new Wallet(1000);
