@@ -18,8 +18,16 @@ class Game {
 
     }
 
-    init(money = this.wallet.getActualValue(), gameResult = '', result = [0, 0, 0], fruits = ['star', 'star', 'star']) {
+    init(money = this.wallet.getActualValue(), gameResult = "", result = [0, 0, 0], fruits = ['star', 'star', 'star'], bid = 0, wonBid = 0) {
         this.walletSpan.textContent = money;
+
+        if (gameResult) {
+            gameResult = `You won ${wonBid} PLN!`;
+        } else if (!gameResult && gameResult != "") {
+            gameResult = `You lose ${bid} PLN!`;
+        }
+
+
         this.gameResult.textContent = gameResult;
         this.gameNumber.textContent = result[0];
         this.gameWins.textContent = result[1];
